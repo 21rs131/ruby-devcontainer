@@ -47,7 +47,6 @@ loop do
         end
       else
         sock.puts "HTTP/1.0 404 Not Found"
-        sock.puts "Content-Type: text/plain; charset=UTF-8"
         sock.puts
         #sock.puts "File not found: #{path}"
       end
