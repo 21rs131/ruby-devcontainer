@@ -24,7 +24,7 @@ loop do
       size = size_str.to_i
       sock.puts 'READY'
 
-      # ダミーデータ送信 + 経過時間計測
+      # 時間計測
       start_t = Process.clock_gettime(Process::CLOCK_MONOTONIC)
       
       bytes_size = size
