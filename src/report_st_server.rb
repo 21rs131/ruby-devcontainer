@@ -1,11 +1,5 @@
 #!/usr/bin/env ruby
 require "socket"
-# 1. TCPのポート65170で接続を待ち受け
-# 2. 接続が来たら、"TEST SIZE"と送信
-# 3. "READY"応答を待つ
-# 4. データを受信し、計測 (クライアント側で計測)
-# 5. 結果を表示
-# 6. 平均値を計算して表示
 
 server = TCPServer.open(65170)
 
