@@ -31,7 +31,7 @@ repeats.times do |i|
   elapsed = elapsed_str.to_i
   sock.close
 
-  # スループットの計算
+  # ダウンロード速度の計算
   mbps = (received.to_f * 8 / 1_000_000) / (elapsed / 1000.0)
   results << mbps
   puts "#{i+1}/#{repeats}: #{elapsed} ms → #{'%.3f' % mbps} Mbps"
