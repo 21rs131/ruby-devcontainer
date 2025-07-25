@@ -24,7 +24,7 @@ repeats.times do |i|
     received += data.bytesize
   end
 
-  # サーバからの経過時間を受け取り
+  # サーバからの経過時間を受け取る
   sock.gets
   dline = sock.gets&.chomp
   _, elapsed_str = dline.split
